@@ -1,0 +1,30 @@
+<div  fxLayoutAlign="start" style="margin-left: 200px;" >
+    <p class="subtitle">Lastly the Legal stuff...</p>
+</div>
+
+<div class="phoneInputForm" fxLayoutAlign="start" style="margin-top:20px; margin-left: 200px;">
+    <mat-form-field  fxFlex="80%"   appearance="outline" [style.width.px]=400>
+        <textarea matInput #legal rows="9"></textarea>
+    </mat-form-field>
+</div>
+<div fxLayoutAlign="start" style="margin-left: 200px;">
+    <mat-checkbox style="font-size: 20px; color: grey;">I agree to the terms and conditions</mat-checkbox>
+</div>
+
+<div fxLayout="column">
+    <div fxFlex fxLayout="row" fxLayoutGap="700px" style="margin-top: 80px; margin-left: 100px;">
+        <div style="margin-top: 50px; color: grey; font-size: 30px;">
+           <a class="back" routerLink="/info">Back</a> 
+        </div>
+        
+        <div fxLayoutAlign="end" style="margin-right: 100px;">
+            <span class="start" disabled>
+            <a class="next" routerLink="/check-cellphone">Submit</a> 
+            </span>
+            <!-- <img src="../../assets/icons/prequal_grey_button.png" style="float:right;" alt="" height="70px"> -->
+            <img src="../../assets/icons/prequal_navy_button.png" style="float:right;" alt="" height="70px">
+        </div>
+        
+    </div>
+</div>
+

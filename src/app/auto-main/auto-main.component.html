@@ -1,0 +1,33 @@
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
+      
+ 
+        <div  fxLayout="row"  fxLayoutAlign="center">
+          <mat-stepper labelPosition="bottom" fxLayout="row wrap">
+            <mat-step label="Phase Description">
+            </mat-step>
+            <mat-step label="Phase Description">
+            </mat-step>
+            <mat-step label="Phase Description" >
+            </mat-step>
+            <mat-step label="Phase Description" >
+            </mat-step>
+            <mat-step label="Phase Description" >
+            </mat-step>
+          </mat-stepper>
+        </div>
+
+      <router-outlet></router-outlet>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+  
+        <h2 style="color: rgb(42, 77, 173); cursor:pointer" *ngIf="showFiller == true" (click)="drawer.toggle(); toggleShowText()">
+          <a routerLink="/get-started"> Here you are on the dealers website!</a>
+        </h2>
+  
+    </div>
+  
+  </mat-drawer-container>
+
+  

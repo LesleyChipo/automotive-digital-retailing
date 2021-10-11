@@ -1,0 +1,21 @@
+@use '~@angular/material' as mat;
+
+@include mat.core();
+
+$my-auto-primary: mat.define-palette(mat.$indigo-palette, 900);
+$my-auto-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The "warn" palette is optional and defaults to red if not specified.
+$my-auto-warn: mat.define-palette(mat.$red-palette);
+
+
+$my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-auto-primary,
+   accent: $my-auto-accent,
+   warn: $my-auto-warn,
+ )
+));
+
+// Emit theme-dependent styles for common features used across multiple components.
+@include mat.all-component-themes($my-theme);

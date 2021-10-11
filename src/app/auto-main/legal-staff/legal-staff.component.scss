@@ -1,0 +1,27 @@
+.start{
+    position: absolute;
+    z-index: 1;
+    margin-top: 25px;
+    margin-right: 100px;
+    color: white;
+    font-size: 25px;
+  }
+a{
+    text-decoration: none;
+}
+mat-label{
+    font-size: 20px;
+    font-style: Segoe UI;
+}
+.subtitle{
+    font-size: 30px;
+    font-style: Segoe UI;
+    font-weight:500;
+    margin-top: 70px;
+}
+.next{
+    color: white;
+}
+.back{
+    color: grey !important;
+}

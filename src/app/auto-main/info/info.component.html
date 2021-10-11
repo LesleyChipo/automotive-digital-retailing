@@ -1,0 +1,46 @@
+<div  fxLayoutAlign="center" >
+    <p class="subtitle">Please provide the following Information:</p>
+</div>
+<div fxLayout="column">
+    <div fxLayoutAlign="center" class="phoneNumber">10 digit Cell Phone Number</div>
+    <div class="phoneInputForm" fxLayoutAlign="center">
+        <mat-form-field  appearance="outline" [style.width.px]=400>
+            <input matInput placeholder="(123) 456 - 7890">
+        </mat-form-field>
+    </div>
+    <div fxLayoutAlign="center" class="phoneNumber">Month and Day of your Date of Birth</div>
+    
+        <div class="phoneInputForm" fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center">
+            <mat-form-field  appearance="outline" [style.width.px]=300>
+                <mat-label>Birth Month</mat-label>
+                <mat-select >
+                    <mat-option *ngFor="let month of months, index as i" [value]="(i + 1)" (click)="getDaysOfMonth(i + 1)">{{month}}</mat-option>
+                </mat-select>
+                <!-- <input matInput placeholder="Birth Month"> -->
+            </mat-form-field>
+            <mat-form-field  appearance="outline" [style.width.px]=200>
+                <mat-label>Day</mat-label>
+                <mat-select >
+                    <mat-option *ngFor="let day of days, index as i" [value]="(i + 1)">{{day}}</mat-option>
+                </mat-select>
+                <!-- <input matInput placeholder="Day"> -->
+            </mat-form-field>
+        </div>
+
+        <div fxFlex fxLayout="row" fxLayoutGap="700px" style="margin-top: 80px; margin-left: 100px;">
+            <div style="margin-top: 50px; color: grey; font-size: 30px;">
+               <a class="back" routerLink="/get-started">Back</a> 
+            </div>
+            
+            <div fxLayoutAlign="end" style="margin-right: 100px;">
+                <span class="start">
+                <a class="next" routerLink="/legal-staff">Next</a> 
+                </span>
+                <img src="../../assets/icons/prequal_navy_button.png" style="float:right;" alt="" height="70px">
+            </div>
+        </div>
+
+        
+  
+   
+</div>

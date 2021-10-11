@@ -1,0 +1,46 @@
+.subtitle{
+    font-size: 30px;
+    font-style: Segoe UI;
+    font-weight:500;
+    margin-top: 70px;
+}
+.phoneNumber{
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: Segoe UI;
+}
+.phoneInputForm{
+    margin-top: 10px;
+}
+input{
+    text-align: center;
+    font-size: 20px;
+    font-style: Segoe UI;
+}
+.start{
+    position: absolute;
+    z-index: 1;
+    margin-top: 25px;
+    margin-right: 100px;
+    color: white;
+    font-size: 25px;
+  }
+a{
+    text-decoration: none;
+}
+mat-label{
+    font-size: 20px;
+    font-style: Segoe UI;
+}
+.next{
+    color: white;
+}
+.back{
+    color: grey !important;
+}
+.mat-select-arrow-wrapper {
+    display: none !important;
+}
+.mat-select-arrow{
+    display: none;
+}

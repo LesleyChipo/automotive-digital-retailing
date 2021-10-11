@@ -1,0 +1,47 @@
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    
+  }
+  .header{
+      margin-top: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: Segoe UI;
+    font-size: 40px;
+    color:  rgb(100, 211, 248);
+}
+.subtitle{
+    font-size: 25px;
+    font-style: Segoe UI;
+    font-weight:400;
+    margin-top: 70px;
+}
+    .bullet{
+    font-size: 15px;
+    margin-left: 200px; 
+    li{
+        padding-top: 20px;
+        font-style:normal;
+        font-size: 25px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+  .start{
+    position: absolute;
+    z-index: 1;
+    margin-top: 25px;
+    margin-right: 70px;
+    color: white;
+    font-size: 25px;
+  }
+  .save-button{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
